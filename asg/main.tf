@@ -19,8 +19,8 @@ data "aws_ami" "ubuntu" {
 data "terraform_remote_state" "network" {
   backend = "s3"
   config = {
-    bucket = "tfm-april-2026-tnzdmtr"
-    key    = "path/to/my/sdlc-vpc"
+    bucket = "tfm-april-2026-farrukh"
+    key    = "path/to/networking/tfstate"
     region = "us-east-2"
   }
 }
