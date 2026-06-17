@@ -17,3 +17,18 @@ jobs:
         working-directory: vpc
         run: |
           terraform init
+
+
+      # Runs a single commaind using the runners shell.
+      - name: Init
+        working-directory: vpc
+        run: |
+          terraform plan
+
+
+      # Runs a single commaind using the runners shell.
+      - name: Init
+        working-directory: vpc
+        run: |
+          terraform apply
+
