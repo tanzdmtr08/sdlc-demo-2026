@@ -39,15 +39,15 @@ jobs:
 
 
       # Runs a single commaind using the runners shell.
-      - name: Init
+      - name: Plan
         working-directory: vpc
         run: |
           terraform plan
 
 
       # Runs a single commaind using the runners shell.
-      - name: Init
+      - name: Apply
         working-directory: vpc
         run: |
-          terraform apply
+          terraform apply --auto-approve
 
