@@ -1,1 +1,19 @@
+name: VPC Deploy
 
+# If someone pushes to main branch, then continue executing.
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Runs a single commaind using the runners shell.
+      - name: Init
+        working-directory: vpc
+        run: |
+          terraform init
