@@ -7,8 +7,8 @@ permissions:
 # If someone pushes to main branch, then continue executing.
 on:
   push:
-    paths:
-      - 'asg/*'
+    branches:
+      - main
 
 jobs:
   build:
