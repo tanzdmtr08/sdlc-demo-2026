@@ -23,7 +23,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::ACCOUNT-ID-HERE:role/github-actions-demo
+          role-to-assume: arn:aws:iam::447356678585:role/github-actions-demo
           aws-region: us-east-2
 
       - name: Destroy ASG
